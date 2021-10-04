@@ -18,6 +18,7 @@ CREATE TABLE quotes (
 
 # how to peek inside the lock tables
     DESCRIBE quotes;
+DESCRIBE albums;
 
 #how to create a new table
 INSERT INTO quotes (author_first_name, author_last_name, content)
@@ -54,18 +55,22 @@ INSERT INTO quotes (author_first_name, author_last_name, content)
 
 # ================================= SELECT STATEMENTS
 
-                                                                 # Select All
+# Select All
+SELECT * FROM albums;
 
 # Select Specific Columns
+SELECT id, name FROM albums;
 
-                                                                         # Where clause
+# Where clause
+SELECT id, name, artist FROM albums
+WHERE id = 3;  #OR WHERE id > 3; name = 'Bad';
 
 # Operators
 
+
 # Miscellaneous Output
-
-
-
+SELECT 'Name of all albums by Pink Floyd are: ';
+SELECT artist = 'Pink Floyd' AS 'Artist Name';
 
 
 
