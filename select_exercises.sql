@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+SELECT 'The name of all Pink Floyd albums are';
+
 # The name of all albums by Pink Floyd
 SELECT name AS 'Albums from Pink Floyd' FROM albums
 WHERE artist = 'Pink Floyd';
@@ -14,7 +16,7 @@ WHERE name = 'Nevermind';
 
 # Which albums were released in the 1990s
 SELECT name AS 'Album', release_date AS 'Release date' FROM albums
-WHERE release_date BETWEEN 1990 AND 2000;
+WHERE release_date BETWEEN 1990 AND 1999;
 
 # Which albums had less than 20 million certified sales
 SELECT name, sales FROM albums
