@@ -161,23 +161,23 @@
 # JOIN email AS e ON e.user_id = u.id;
 
 #many-to-many relationship
-TABLE: chew_toys
-id
-price
-does_squeak
-name
-
-join table or associative table: Pet_toy
-chew_toy_id
-pet_id
-
-TABLE: pets
-id
-name
-description
-life_expectancy
-is_sterilized
-weight
+# TABLE: chew_toys
+# id
+# price
+# does_squeak
+# name
+#
+# join table or associative table: Pet_toy
+# chew_toy_id
+# pet_id
+#
+# TABLE: pets
+# id
+# name
+# description
+# life_expectancy
+# is_sterilized
+# weight
 
 
 
